@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
             Get.bottomSheet(
               Container(
                 height: 300,
-                color: Colors.,
+                color: Colors.blue,
                 child: ListView(
                   children: const [
                     ListTile(
