@@ -23,7 +23,6 @@ class Homecontroller extends GetxController {
     // debounce(
     //   dataPatau,
     //   (callback) => ('Pantau mybro'),
-    //   time: Duration(seconds: 2),
     // );
 
     //Selalu dipatau selama 2 menit
