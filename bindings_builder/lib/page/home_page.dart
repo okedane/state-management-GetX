@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
-  final counter_c = Get.put(CounterController());
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,10 +14,13 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {
-            Get.to(CounterPage());
-          },
-          child: Text("Counter"),
+          //
+          // onPressed: () => Get.to(
+          //   () => CounterPage(),
+          //   binding: BindingsBuilder.put(() => CounterController()),
+          // ),
+          onPressed: () => Get.toNamed("/counter"),
+          child: const Text("Counter"),
         ),
       ),
     );

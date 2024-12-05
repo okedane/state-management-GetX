@@ -35,7 +35,13 @@ class CounterPage extends StatelessWidget {
                   child: const Text("Increment"),
                 )
               ],
-            )
+            ),
+            const SizedBox(height: 10),
+            ElevatedButton(
+                onPressed: () {
+                  Get.back();
+                },
+                child: const Text("Back"))
           ],
         ),
       ),
